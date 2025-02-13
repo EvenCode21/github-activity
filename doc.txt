@@ -1,0 +1,33 @@
+﻿three types of objects in the api response
+
+- Event
+	- id => int
+	- type (name) => string
+	- Actor() => obj
+	- Repository() => obj
+
+- Actor
+	- id => int
+
+- Repository
+
+- Payload (commitComment)
+
+we have to nest them
+
+Class/Record Event:
+	- Actor actor;
+	- Repository repo;
+
+Event types
+
+each event has it's own payload object, which is unique
+
+the payload obj has different types of values by each eventype
+
+overall idea is create a base event class with common properties, then create
+derived classes for each event (pull, push, watch etc) which implements it's own payload
+
+but the idea is to manage it in the http response dynamically
+
+how can i do that? 
