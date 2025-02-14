@@ -1,8 +1,7 @@
 {
   "profiles": {
     "github-activity": {
-      "commandName": "Project",
-      "commandLineArgs": "evencode21"
+      "commandName": "Project"
     }
   }
 }
