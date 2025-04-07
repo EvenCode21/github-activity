@@ -8,7 +8,7 @@ class Program
 {
     enum ExitCodes
     {
-        Succes = 0,
+        Success = 0,
         UsernameMissing,
         ApiError,
         NoEvents
@@ -36,7 +36,7 @@ class Program
             }
             
             PrintEvents(events);
-            return (int) ExitCodes.Succes;
+            return (int) ExitCodes.Success;
         }
         else
         {
